@@ -42,3 +42,8 @@ tests: # тестирование
 
 tests-cov: # тестирование с выводом процента покрытия кода тестами
 	pytest ${TEST_DIR} --cov
+
+.PHONY: test
+
+test:
+	python -m pytest -v

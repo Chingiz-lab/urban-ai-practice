@@ -42,3 +42,11 @@ ENV/
 
 # PyCharm env
 .idea
+
+# Local research artifacts and large datasets
+cache/
+examples/cache/
+examples/output/
+examples/output_magnitogorsk_town/
+examples/data/magnitogorsk/
+examples/data/magnitogorsky_okrug/

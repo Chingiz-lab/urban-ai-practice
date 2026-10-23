@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=output/dashboard.html">
+<title>Открываю дашборд…</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.card {
+  width: min(440px, calc(100vw - 32px));
+  padding: 32px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .07);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .08);
+}
+.mark {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #1d1d1f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+h1 { margin: 0 0 8px; font-size: 24px; font-weight: 600; letter-spacing: -.03em; }
+p { margin: 0 0 20px; color: #6e6e73; font-size: 14px; line-height: 1.5; }
+a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #0071e3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+a:hover { background: #0066cc; }
+small { display: block; margin-top: 16px; color: #86868b; font-size: 11px; line-height: 1.45; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="mark">МГО</div>
+    <h1>Открываю готовый дашборд</h1>
+    <p>Этот файл — шаблон. Интерактивная версия находится в папке <code>output</code>.</p>
+    <a href="output/dashboard.html">Открыть дашборд</a>
+    <small>Если переход не произошёл, откройте файл <code>examples/output/dashboard.html</code>.</small>
+  </main>
+  <script>location.replace('output/dashboard.html');</script>
+</body>
+</html>
